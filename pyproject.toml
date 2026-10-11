@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fr-phonenumbers"
+version = "0.1.0"
+description = "Détecteur d'opérateur pour les numéros de téléphone français."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    { name = "RIENK Consulting", email = "contact@rienkconsulting.fr" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Telephony",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/RIENK-Consulting/fr-phonenumbers"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src/fr_phonenumbers",
+    "README.md",
+    "LICENSE",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
