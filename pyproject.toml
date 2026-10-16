@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fr-phonenumbers"
-version = "0.1.0"
+version = "0.1.1"
 description = "Détecteur d'opérateur pour les numéros de téléphone français."
 readme = "README.md"
 requires-python = ">=3.10"

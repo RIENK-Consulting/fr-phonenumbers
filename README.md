@@ -27,8 +27,11 @@ from fr_phonenumbers import get_operator
 
 resultat = get_operator("0105712345")
 print(resultat)
-# Sortie : {'code': 'FRTE', 'operator': '...', 'zone': 'Métropole'}
+# Sortie : {'code': 'FRTE', 'operator': 'Orange', 'zone': 'Métropole'}
 ```
+
+## Avertissement : Portabilité des numéros
+En raison de la portabilité des numéros en France, l'opérateur renvoyé correspond à l'attributaire initial de la tranche de numérotation (fourni par l'ARCEP), et non nécessairement à l'opérateur réel chez qui le client a porté son numéro. Cette bibliothèque permet d'identifier l'affectation théorique d'une ligne, mais ne peut pas refléter les changements individuels liés à la portabilité.
 
 ## Sources des Données
 
